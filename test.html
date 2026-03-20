@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge Vault</title>
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            color: #1f2937;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: white;
+            border-bottom: 1px solid #eee;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .logo span {
+            color: #22c55e;
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #374151;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: #22c55e;
+        }
+
+        /* BUTTONS */
+        .btn-primary {
+            background: #22c55e;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .btn-primary:hover {
+            background: #16a34a;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 1px solid #9ca3af;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            height: 90vh;
+            background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* OVERLAY */
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 25, 47, 0.75);
+        }
+
+        /* HERO CONTENT */
+        .hero-content {
+            position: relative;
+            text-align: center;
+            color: white;
+            max-width: 700px;
+        }
+
+        /* BADGE */
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        /* TITLE */
+        .hero h1 {
+            font-size: 42px;
+            line-height: 1.3;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #22c55e;
+        }
+
+        /* TEXT */
+        .hero p {
+            font-size: 15px;
+            color: #d1d5db;
+            margin-bottom: 25px;
+        }
+
+        /* BUTTON GROUP */
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">🌱 <span>KV</span></div>
+
+            <nav class="nav-links">
+                <a href="#">Features</a>
+                <a href="#">How it works</a>
+                <a href="#">Why it's different</a>
+            </nav>
+
+            <button class="btn-primary">Get Early Access</button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="overlay"></div>
+
+        <div class="container hero-content">
+            <div class="badge">🚀 Early Access Now Open</div>
+
+            <h1>
+                Structured Thinking,<br />
+                <span>Not Just Note-Taking.</span>
+            </h1>
+
+            <p>
+                A private space to store notes, links, and learning summaries —
+                designed to help you think clearly and connect ideas.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn-primary">Start Building Your Vault →</button>
+                <button class="btn-secondary">▶ See How It Works</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
