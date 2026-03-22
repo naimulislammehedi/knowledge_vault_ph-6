@@ -289,3 +289,63 @@ body {
 .extra button {
     margin-bottom: 16px;
 }
+
+/* FOOTER */
+footer {
+    background-color: #001931;
+}
+
+.footer-top {
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 120px 30px 120px;
+}
+
+.footer-sm {
+    color: white;
+}
+
+.footer-sm p {
+    margin-bottom: 16px;
+}
+
+.footer-sm-icon ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 8px;
+}
+
+.footer-sm-icon ul li i{
+    background-color: white;
+    padding: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-sm-icon a {
+    text-decoration: none;
+    color: #001931;
+}
+
+footer .hr {
+    width: 1360px;
+    margin: 0 auto;
+    border: 0.5px solid #6273828f;
+    margin-bottom: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-bottom: 54px;
+    color: white;
+
+}
